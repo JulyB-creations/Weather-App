@@ -21,6 +21,15 @@ li {
   line-height: 1;
   list-style: none;
 }
+h3 {
+  text-align: center;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: bold;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
 p {
   text-align: center;
 }
@@ -30,6 +39,7 @@ a {
 
 .weather-app {
   border: 1px solid rgb(135, 135, 135);
+  background-color: rgb(70, 221, 241);
   padding: 20px;
   margin: 25px auto;
   border-radius: 10px;
@@ -53,14 +63,23 @@ a {
   top: -20px;
   height: 70px;
   width: 70px;
-  margin-right: 10px;
 }
 .units {
   position: relative;
   top: -34px;
 }
+
 .forecast-icon {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.forecast-temp {
+  text-align: center;
+  font-size: small;
+  color: rgb(135, 135, 135);
+  height: 19px;
+  line-height: 1;
 }
 .gitHubLink {
   font-size: x-small;
