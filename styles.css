@@ -24,14 +24,13 @@ li {
 a {
   text-decoration: none;
 }
-.container {
-  max-width: 300;
-}
+
 .weather-app {
   border: 1px solid #dadde1;
   padding: 20px;
   margin: 25px auto;
   border-radius: 10px;
+  max-width: 650px;
 }
 .search-form {
   margin-bottom: 20px;
