@@ -21,6 +21,9 @@ li {
   line-height: 1;
   list-style: none;
 }
+p {
+  text-align: center;
+}
 a {
   text-decoration: none;
 }
@@ -31,6 +34,9 @@ a {
   margin: 25px auto;
   border-radius: 10px;
   max-width: 650px;
+}
+.description {
+  text-transform: capitalize;
 }
 .search-form {
   margin-bottom: 20px;

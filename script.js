@@ -19,7 +19,7 @@ function formatDate(now) {
 
   let day = days[now.getDay()];
 
-  return `${day}, ${hours}:${minutes}`;
+  return `Last updated: ${day}, ${hours}:${minutes}`;
 }
 let today = document.querySelector("#date");
 let now = new Date();
@@ -39,7 +39,14 @@ function displayWeather(response) {
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
+  let weatherIconElement = document.querySelector("#weather-icon");
+  weatherIconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  weatherIconElement.setAttribute("alt", response.data.weather[0].description)
+  )
 }
 
 function searchCity(event) {

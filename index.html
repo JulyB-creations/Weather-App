@@ -10,8 +10,8 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>JB Weather App</title>
     <script
       src="https://kit.fontawesome.com/4ca7dc9251.js"
@@ -48,69 +48,90 @@
         </form>
         <h1>City</h1>
         <ul>
-          <li id="date">Wednesday 22:00</li>
-          <li id="description">Weather Description</li>
+          <li id="date">Sunday 00:00</li>
+          <li class="description" id="description">Weather Description</li>
         </ul>
         <div class="row">
           <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-              alt="Partly Cloudy"
-              class="weather-icon"
-            />
-            <span class="temp" id="temp">0</span>
-            <span class="units">
-              <a href="#" id="celsius-link"> °C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
+            <div class="clearfix">
+              <div class="float-left">
+                <img
+                  src=""
+                  alt="Weather Description"
+                  class="weather-icon float-left"
+                  id="weather-icon"
+                />
+
+                <span class="temp" id="temp">0</span>
+                <span class="units">
+                  <a href="#" id="celsius-link"> °C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+              </div>
+            </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>Humidity: <span id="humidity"> 0</span>%</li>
-              <li>Wind: <span id="wind"> 0</span>km/h</li>
+              <li>Humidity: <span id="humidity"> 0</span> %</li>
+              <li>Wind: <span id="wind"> 0 </span> km/h</li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-2">
             <ul class="forecast">
-              <li>Thursday</li>
+              <li>Day1</li>
               <li>
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
                   alt="Partly Cloudy"
                   class="forecast-icon"
+                  id="forecast-icon-1"
                 />
               </li>
             </ul>
           </div>
-          <div class="col-3">
-            <li>Thursday</li>
+          <div class="col-2">
+            <li>Day2</li>
             <li>
               <img
                 src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
                 alt="Partly Cloudy"
                 class="forecast-icon"
+                id="forecast-icon-2"
               />
             </li>
           </div>
-          <div class="col-3">
-            <li>Thursday</li>
+          <div class="col-2">
+            <li>Day3</li>
             <li>
               <img
                 src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
                 alt="Partly Cloudy"
                 class="forecast-icon"
+                id="forecast-icon-3"
               />
             </li>
           </div>
-          <div class="col-3">
-            <li>Thursday</li>
+          <div class="col-2">
+            <li>Day4</li>
             <li>
               <img
                 src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
                 alt="Partly Cloudy"
                 class="forecast-icon"
+                id="forecast-icon-4"
+              />
+            </li>
+          </div>
+          <div class="col-2">
+            <li>Day5</li>
+            <li>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="Partly Cloudy"
+                class="forecast-icon"
+                id="forecast-icon-5"
               />
             </li>
           </div>
