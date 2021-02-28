@@ -43,7 +43,7 @@ function displayWeather(response) {
   let weatherIconElement = document.querySelector("#weather-icon");
   weatherIconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIconElement.setAttribute("alt", response.data.weather[0].description);
 }
@@ -114,7 +114,7 @@ function searchLocation(position) {
   let lon = position.coords.longitude;
   let units = "metric";
   let apiKey = "d4b17c5b0c006239da987428a9e9effa";
-  let apiEndpoint = "http://api.openweathermap.org/data/2.5/weather";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrl = `${apiEndpoint}?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayWeather);
