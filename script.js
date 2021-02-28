@@ -27,7 +27,6 @@ let now = new Date();
 today.innerHTML = formatDate(now);
 
 function displayWeather(response) {
-  console.log(response.data);
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
