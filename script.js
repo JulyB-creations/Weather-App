@@ -129,7 +129,7 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);*/
 
-search("Berlin");
+search("Oslo");
 
 function convertToFahrenheit(event) {
   event.preventDefault();
