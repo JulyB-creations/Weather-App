@@ -108,7 +108,8 @@ function search(city) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-function searchLocation(position) {
+/*function searchLocation(position) {
+  console.log(position);
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let units = "metric";
@@ -126,7 +127,7 @@ function getCurrentLocation(event) {
 }
 
 let currentLocationButton = document.querySelector("#location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+currentLocationButton.addEventListener("click", getCurrentLocation);*/
 
 search("Berlin");
 
